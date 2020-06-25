@@ -1,0 +1,60 @@
+{
+  "contacts": [
+    {
+      "userName": "7777",
+      "comment": "",
+      "userposition": null,
+      "city": null,
+      "temperature": "",
+      "date": "2020-06-12T00:57",
+      "addedDate": "2020-06-24T21:57:29.549Z",
+      "autorizedUser": "",
+      "id": "AM7X7g-Hp"
+    },
+    {
+      "userName": "Vika Jena",
+      "comment": "Kot",
+      "userposition": {
+        "value": "boss",
+        "label": "Босс"
+      },
+      "city": {
+        "value": "kiev",
+        "label": "Киев"
+      },
+      "temperature": "37",
+      "date": "2020-06-02T01:01",
+      "addedDate": "2020-06-24T22:02:08.398Z",
+      "autorizedUser": "",
+      "id": "O6eIVfoOI"
+    },
+    {
+      "userName": "Работник Трудовик",
+      "comment": "Норм",
+      "userposition": {
+        "value": "secretar",
+        "label": "Секретарь"
+      },
+      "city": {
+        "value": "dnepr",
+        "label": "Днепр"
+      },
+      "temperature": "36.6",
+      "date": "2020-06-17T18:21",
+      "addedDate": "2020-06-25T15:21:38.726Z",
+      "autorizedUser": "admin",
+      "id": "9XaOJpJ5L"
+    },
+    {
+      "userName": "qweqwe",
+      "comment": "",
+      "userposition": null,
+      "city": null,
+      "temperature": "",
+      "date": "",
+      "addedDate": "2020-06-25T15:39:26.075Z",
+      "autorizedUser": "1111",
+      "id": "_TM5d24CJ"
+    }
+  ]
+}

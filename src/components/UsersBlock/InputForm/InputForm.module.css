@@ -1,0 +1,58 @@
+.continer {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 750px;
+  margin: 20px auto 0;
+}
+
+.inputFeld {
+  border: 1px solid;
+  width: 742px;
+  height: 25px;
+  border-radius: 4px;
+  margin-bottom: 13px;
+}
+.selector {
+  border: 1px solid;
+  outline: none;
+  border-radius: 4px;
+  margin-bottom: 13px;
+}
+
+.textArea {
+  border: 1px solid;
+  border-radius: 4px;
+  width: 742px;
+  min-height: 50px;
+  resize: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.inputName {
+  margin: 0;
+}
+
+.BtnSubmit {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #0289d1ce;
+  outline: none;
+  height: 35px;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.BtnSubmit:hover {
+  background-color: white;
+  color: #0289d1ce;
+  border: 2px solid #0289d1ce;
+}

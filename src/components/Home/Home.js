@@ -6,7 +6,7 @@ const Home = () => {
     <div className={styles.globalContainer}>
       <div className={styles.container}>
         <>
-          <div className={styles.text}>Добро пожалывать на сайт</div>
+          <div className={styles.text}>Добро пожаловать на сайт</div>
           <div className={styles.text}>
             В вашем распоряжении функционал для контроля за температурой
             персонала

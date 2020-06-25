@@ -36,7 +36,7 @@ const UserList = ({ contacts }) =>
       )}
     </TransitionGroup>
   ) : (
-    <h3>Информации нет</h3>
+    <h3 className={styles.informText}>Записей нет</h3>
   );
 
 export default UserList;

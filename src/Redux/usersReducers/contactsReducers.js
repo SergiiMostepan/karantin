@@ -11,7 +11,6 @@ export const usersSlice = createSlice({
     deleteUsersSuccess: (state, action) =>
       state.filter((contact) => contact.id !== action.payload),
     postUsersStarted: (state, action) => [...state],
-    // postUsersSuccess: (state, action) => [...state, action.payload],
     postUsersSuccess: (state, action) => [...state, action.payload],
   },
 });

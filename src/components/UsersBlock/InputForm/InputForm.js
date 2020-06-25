@@ -1,19 +1,12 @@
 import React, { Component } from "react";
 import Select from "react-select";
 import { CSSTransition } from "react-transition-group";
-// import PropTypes from "prop-types";
 import { usersPositions, cities } from "../../../utils/UsersData";
 import Notify from "../../../utils/Notification";
 import NotifyTransition from "../transitions/Notify.module.css";
 import styles from "./InputForm.module.css";
 
 class InputForm extends Component {
-  // static propTypes = {
-  //   addContact: PropTypes.func.isRequired,
-  //   isExist: PropTypes.func.isRequired,
-  //   contactState: PropTypes.array.isRequired,
-  // };
-
   state = {
     userName: "",
     comment: "",
@@ -29,31 +22,14 @@ class InputForm extends Component {
     this.setState({
       [e.target.name]: e.target.value,
     });
-    // console.log(typeof e.target.value);
   };
 
   handleChangeSelector = (selectedOption, e) => {
     this.setState({ [e.name]: selectedOption });
   };
 
-  // isContactExist = (e) => {
-  //   if (
-  //     this.props.contactState.find(
-  //       (item) =>
-  //         item.userName.toLowerCase() === this.state.userName.toLowerCase()
-  //     )
-  //   ) {
-  //     this.props.isExist();
-  //     setTimeout(() => this.props.isExist(), 1000);
-
-  //     return;
-  //   }
-  //   this.props.addContact({ ...this.state });
-  // };
-
   hendleSubmit = (e) => {
     e.preventDefault();
-    // this.isContactExist(e);
     this.props.addContact({
       userName: this.state.userName,
       comment: this.state.comment,
@@ -101,7 +77,7 @@ class InputForm extends Component {
             id="userName"
             value={this.state.userName}
             onChange={this.handleChange}
-            // required
+            required
           />
           <label htmlFor="userposition">Должность</label>
           <Select
@@ -112,6 +88,7 @@ class InputForm extends Component {
             options={usersPositions}
             className={styles.selector}
           />
+
           <label htmlFor="city">Город</label>
           <Select
             name="city"
@@ -131,7 +108,7 @@ class InputForm extends Component {
             id="date"
             value={date}
             onChange={this.handleChange}
-            // required
+            required
           />
           <label htmlFor="temperature" className={styles.inputName}>
             Температура
@@ -143,7 +120,7 @@ class InputForm extends Component {
             id="temperature"
             value={temperature}
             onChange={this.handleChange}
-            // required
+            required
           />
           <label htmlFor="comment" className={styles.inputName}>
             Коментарий
@@ -155,7 +132,7 @@ class InputForm extends Component {
             name="comment"
             value={this.state.comment}
             onChange={this.handleChange}
-            // required
+            required
           />
           <button className={styles.BtnSubmit} type="submit">
             Добавить запись

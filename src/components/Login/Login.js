@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { autorizedUsers } from "../../utils/autorizedUsers";
+import styles from "./Login.module.css";
 
 class Login extends Component {
   state = {
@@ -12,18 +13,6 @@ class Login extends Component {
       [e.target.name]: e.target.value,
     });
   };
-
-  // hendleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (this.state.userLogin === "admin" && this.state.userPass === "admin") {
-  //     this.props.autentificate();
-  //     this.props.history.push("/userslist");
-  //   } else alert("Пользыватель не найден");
-  //   this.setState({
-  //     userLogin: "",
-  //     userPass: "",
-  //   });
-  // };
 
   hendleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +30,6 @@ class Login extends Component {
         this.props.autentificatedUser(newUser.userLogin);
         this.props.history.push("/userslist");
       }
-      // else alert("Пользыватель не найден");
     });
     this.setState({
       userLogin: "",
@@ -50,10 +38,9 @@ class Login extends Component {
   }
 
   render() {
-    // console.log(this.props.autentificatedUser);
     return (
-      <div>
-        <form onSubmit={this.hendleSubmit}>
+      <div className={styles.container}>
+        <form onSubmit={this.hendleSubmit} className={styles.form}>
           <label htmlFor="userLogin">Логин</label>
           <input
             type="text"
@@ -61,6 +48,7 @@ class Login extends Component {
             id="userLogin"
             value={this.state.userLogin}
             onChange={this.handleChange}
+            className={styles.input}
           ></input>
           <label htmlFor="userPass">Пароль</label>
           <input
@@ -68,8 +56,11 @@ class Login extends Component {
             name="userPass"
             value={this.state.userPass}
             onChange={this.handleChange}
+            className={styles.input}
           ></input>
-          <button type="submit">Войти</button>
+          <button type="submit" className={styles.button}>
+            Войти
+          </button>
         </form>
       </div>
     );

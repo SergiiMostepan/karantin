@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <nav className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.logo}>Karantin</div>
+          <div className={styles.logo}>Карантин</div>
           <ul className={styles.navigation}>
             <li className={styles.navItem}>
               <NavLink
@@ -68,14 +68,5 @@ class Header extends Component {
     );
   }
 }
-
-// const mapStateToProps = (state) => ({
-//   isAuntificated: state.isAuntificatedState,
-// });
-
-// const mapDispatchToProps = (dispatch) => ({
-//   autentificate: () => dispatch(isAuntificatedSlice.actions.auntentificate()),
-// });
-// export default connect(mapStateToProps)(Header);
 
 export default Header;

@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react';
-import styles from './Section.module.css';
-import PropTypes from 'prop-types';
+import React, { Fragment } from "react";
+import styles from "./Section.module.css";
 
 const Section = ({ children }) => (
   <Fragment>
@@ -9,9 +8,5 @@ const Section = ({ children }) => (
     </div>
   </Fragment>
 );
-
-Section.propTypes = {
-  children: PropTypes.any.isRequired,
-};
 
 export default Section;

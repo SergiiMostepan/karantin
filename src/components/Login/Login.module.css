@@ -1,0 +1,30 @@
+.container {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.button {
+  height: 30px;
+  outline: none;
+  border: 2px solid white;
+  background-color: #4fc3f7;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  background-color: white;
+  color: #4fc3f7;
+  border: 2px solid #4fc3f7;
+}

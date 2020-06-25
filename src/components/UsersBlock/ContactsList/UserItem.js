@@ -20,19 +20,41 @@ const UserItem = ({
 
   return (
     <li className={styles.contact}>
-      <div className={styles.userData}>
-        <div> {userName} </div>
-        {userPosition && <div>{userPosition.label}</div>}
-        {city && <div>{city.label}</div>}
-        <div>{userDate}</div>
-        <div>{temperature}</div>
-        <div>{comment}</div>
+      <div className={styles.creatorData}>
         <div>{autorizedUser}</div>
         <div>{createdTime}</div>
       </div>
-      <button className={styles.button} type="button" onClick={deleteCont}>
-        <span> &#215;</span>
-      </button>
+      <div className={styles.userData}>
+        <div className={styles.indicators}>
+          <div className={styles.textItem}>ФИО</div>
+          <div className={styles.textItem}>Должность</div>
+          <div className={styles.textItem}>Город</div>
+          <div className={styles.textItem}>Дата измерения</div>
+          <div className={styles.textItem}>Температура</div>
+          <div className={styles.textItem}>Комментарий</div>
+        </div>
+        <div>
+          <div className={styles.textItem}> {userName} </div>
+          {userPosition ? (
+            <div className={styles.textItem}>{userPosition.label}</div>
+          ) : (
+            <div className={styles.textItem}>-</div>
+          )}
+          {city ? (
+            <div className={styles.textItem}>{city.label}</div>
+          ) : (
+            <div className={styles.textItem}>-</div>
+          )}
+          <div className={styles.textItem}>{userDate}</div>
+          <div className={styles.textItem}>{temperature}</div>
+          <div className={styles.textItem}>{comment}</div>
+        </div>
+      </div>
+      <div className={styles.buttonContainer}>
+        <button className={styles.button} type="button" onClick={deleteCont}>
+          <span> &#215;</span>
+        </button>
+      </div>
     </li>
   );
 };

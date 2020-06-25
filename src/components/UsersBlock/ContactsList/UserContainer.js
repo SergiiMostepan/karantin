@@ -2,10 +2,6 @@ import { connect } from "react-redux";
 import { deleteContact } from "../../../Redux/usersReducers/contactsOperators";
 import UseerItem from "./UserItem";
 
-// const mapStateToProps = (state) => ({
-//   autorizedUser: state.auntificatedUserState,
-// });
-
 const mapDispatchToProps = (dispatch) => ({
   deleteUser: (id) => dispatch(deleteContact(id)),
 });

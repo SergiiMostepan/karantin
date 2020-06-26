@@ -1,5 +1,5 @@
 export const usersPositions = [
-  { value: "", label: "" },
+  { value: "-", label: "-" },
   { value: "admin", label: "Администратор" },
   { value: "support", label: "Поддержка" },
   { value: "secretar", label: "Секретарь" },
@@ -7,7 +7,7 @@ export const usersPositions = [
 ];
 
 export const cities = [
-  { value: "", label: "" },
+  { value: "-", label: "-" },
   { value: "kiev", label: "Киев" },
   { value: "kharkov", label: "Харьков" },
   { value: "dnepr", label: "Днепр" },
